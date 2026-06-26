@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="苏州大学听觉与语言智能研究中心，聚焦声音、听觉、语音、知识与认知的智能融合，建设创新科研与人才培养基地。"
+    />
+    <meta name="theme-color" content="#062a5f" />
+    <meta property="og:title" content="CaLi | 苏州大学听觉与语言智能研究中心" />
+    <meta
+      property="og:description"
+      content="从声音到理解和认知。"
+    />
+    <title>CaLi | 苏州大学听觉与语言智能研究中心</title>
+    <link rel="icon" type="image/png" href="assets/cali-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="CaLi home">
+        <img class="brand-logo" src="assets/cali-logo.png" alt="CaLi logo" />
+        <span>
+          <strong>CaLi</strong>
+          <small data-i18n="brand.affiliation">苏州大学</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#about" data-i18n="nav.about">关于我们</a>
+        <a href="#research" data-i18n="nav.research">研究方向</a>
+        <a href="#team" data-i18n="nav.team">研究团队</a>
+        <a href="#approach" data-i18n="nav.approach">创新链条</a>
+        <a href="#partners" data-i18n="nav.partners">合作单位</a>
+        <a href="#connect" data-i18n="nav.connect">联系合作</a>
+        <button class="language-toggle" type="button" aria-label="Switch to English">EN</button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">苏州大学听觉与语言智能研究中心</p>
+          <h1 class="reveal" id="hero-title">
+            <span data-i18n="hero.line1">从声音到理解</span>
+            <em data-i18n="hero.line2">和认知</em>
+          </h1>
+          <p class="hero-intro reveal" data-i18n="hero.intro">
+            面向声音、听觉、语音、知识与认知的智能融合，聚焦具身听觉、分布式智能体、多模态感知与智能工程，建设创新科研与人才培养基地。
+          </p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#research">
+              <span data-i18n="hero.ctaPrimary">探索研究方向</span>
+              <span aria-hidden="true">↘</span>
+            </a>
+            <a class="button button-ghost" href="https://github.com/CaLi-Suda" target="_blank" rel="noreferrer">
+              <span data-i18n="hero.ctaSecondary">访问 GitHub</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <canvas id="sound-field"></canvas>
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="visual-core">
+            <img src="assets/cali-logo.png" alt="" />
+          </div>
+          <p class="visual-label label-a" data-i18n="visual.sound">声音</p>
+          <p class="visual-label label-b" data-i18n="visual.hearing">听觉</p>
+          <p class="visual-label label-c" data-i18n="visual.speech">语音</p>
+          <p class="visual-label label-d" data-i18n="visual.knowledge">知识与认知</p>
+        </div>
+
+        <p class="hero-side-note" data-i18n="hero.sideNote">中国 · 苏州大学</p>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
+          <span data-i18n="hero.scroll">向下探索</span>
+          <i></i>
+        </a>
+      </section>
+
+      <section class="statement section" id="about">
+        <div class="section-index reveal">01 / <span data-i18n="about.index">关于</span></div>
+        <div class="statement-content">
+          <p class="section-kicker reveal" data-i18n="about.kicker">听得更深，想得更远</p>
+          <h2 class="reveal" data-i18n="about.title">
+            源于产业真实问题，面向 AI 时代培养创新人才。
+          </h2>
+          <div class="statement-grid reveal">
+            <p data-i18n="about.body1">
+              听觉及语言智能研究中心隶属于苏州大学。作为江苏省语言计算及应用重点实验室的重要依托单位，中心是由江苏省及苏州大学共同支持建设的创新型人才培养基地。
+            </p>
+            <p data-i18n="about.body2">
+              中心汇聚顶尖师资团队，由 IEEE Fellow、前华为高级专家及江苏省产业教授等领衔指导，并与 C9 高校建立科研直连机制，实现产业前沿需求的无缝对接。
+            </p>
+            <p data-i18n="about.body3">
+              中心始终坚持以真实产业问题为创新源头，构建“产学研用”深度融合的创新共同体，聚焦具身听觉、分布式智能体等前沿核心技术，贯通关键技术突破到产业场景落地的全链条创新体系，致力于培养 AI 时代下的创新型人才。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="research section" id="research">
+        <div class="section-heading">
+          <div class="section-index reveal">02 / <span data-i18n="research.index">研究</span></div>
+          <div>
+            <p class="section-kicker reveal" data-i18n="research.kicker">四个彼此连接的前沿方向</p>
+            <h2 class="reveal" data-i18n="research.title">从感知与认知走向智能工程。</h2>
+          </div>
+        </div>
+
+        <div class="research-list">
+          <article class="research-card reveal">
+            <div class="card-number">01</div>
+            <div class="card-icon wave-icon" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i>
+            </div>
+            <h3 data-i18n="research.card1Title">语言与多模态感知</h3>
+            <p data-i18n="research.card1Body">
+              让智能系统在复杂真实环境中协同感知语音、视觉、声音与上下文信息。
+            </p>
+            <ul>
+              <li data-i18n="research.card1Tag1">语言感知</li>
+              <li data-i18n="research.card1Tag2">多模态融合</li>
+              <li data-i18n="research.card1Tag3">具身感知</li>
+            </ul>
+          </article>
+
+          <article class="research-card reveal">
+            <div class="card-number">02</div>
+            <div class="card-icon language-icon" aria-hidden="true">
+              <span>a</span><span>声</span><span>ə</span>
+            </div>
+            <h3 data-i18n="research.card2Title">音频信号分析与处理</h3>
+            <p data-i18n="research.card2Body">
+              发现声学信号结构，研究增强、分离、空间分析与稳健机器听觉方法。
+            </p>
+            <ul>
+              <li data-i18n="research.card2Tag1">信号增强</li>
+              <li data-i18n="research.card2Tag2">空间音频</li>
+              <li data-i18n="research.card2Tag3">声学分析</li>
+            </ul>
+          </article>
+
+          <article class="research-card reveal">
+            <div class="card-number">03</div>
+            <div class="card-icon human-icon" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <h3 data-i18n="research.card3Title">多模态与语言认知</h3>
+            <p data-i18n="research.card3Body">
+              研究人类与机器智能中语言、感知信息和知识的表征、融合与推理机制。
+            </p>
+            <ul>
+              <li data-i18n="research.card3Tag1">语言认知</li>
+              <li data-i18n="research.card3Tag2">跨模态推理</li>
+              <li data-i18n="research.card3Tag3">分布式智能体</li>
+            </ul>
+          </article>
+
+          <article class="research-card reveal">
+            <div class="card-number">04</div>
+            <div class="card-icon compute-icon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <h3 data-i18n="research.card4Title">高性能计算与智能工程</h3>
+            <p data-i18n="research.card4Body">
+              推动前沿 AI 成为面向科学与产业场景的高效、可扩展、可部署系统。
+            </p>
+            <ul>
+              <li data-i18n="research.card4Tag1">AI 系统</li>
+              <li data-i18n="research.card4Tag2">高性能计算</li>
+              <li data-i18n="research.card4Tag3">智能工程</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="team section" id="team">
+        <div class="section-heading">
+          <div class="section-index reveal">03 / <span data-i18n="team.index">团队</span></div>
+          <div>
+            <p class="section-kicker reveal" data-i18n="team.kicker">研究团队</p>
+            <h2 class="team-statement reveal" data-i18n="team.title">中心汇聚顶尖师资团队，由 IEEE Fellow、前华为高级专家领衔指导。</h2>
+          </div>
+        </div>
+
+        <div class="team-roster reveal">
+          <article class="team-row">
+            <p>
+              <a class="team-profile-link" href="https://www.cs.sjtu.edu.cn/jiaoshiml/yukai.html" target="_blank" rel="noreferrer">
+                <span data-i18n="team.line1">主任：俞凯教授</span>
+                <i aria-hidden="true">↗</i>
+              </a>
+            </p>
+            <small data-i18n="team.yuInfo1">IEEE Fellow、ISCA Fellow</small>
+            <small data-i18n="team.yuInfo2">上海交通大学计算机学院特聘教授、博士生导师。苏州大学兼职讲席教授。</small>
+          </article>
+          <article class="team-row">
+            <p>
+              <a class="team-profile-link" href="https://web.suda.edu.cn/future/zmy2/main.psp" target="_blank" rel="noreferrer">
+                <span data-i18n="team.line2">副主任：朱梦尧教授</span>
+                <i aria-hidden="true">↗</i>
+              </a>
+            </p>
+            <small data-i18n="team.zhuInfo1">苏州大学未来科学与工程学院教授，博士生导师。</small>
+            <small data-i18n="team.zhuInfo2">世界超高清产业联盟（UWA）音频标准组联席组长，中国电子音响行业协会声音与音乐技术专委会副主任。</small>
+          </article>
+          <article class="team-row team-row-compact">
+            <p data-i18n="team.line3">胡诗超 副教授，徐春阳 讲师</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="approach section" id="approach">
+        <div class="approach-intro">
+          <div class="section-index reveal">04 / <span data-i18n="approach.index">链条</span></div>
+          <div>
+            <p class="section-kicker reveal" data-i18n="approach.kicker">一条完整创新链</p>
+            <h2 class="reveal" data-i18n="approach.title">突破 · 转化 · 育人</h2>
+            <p class="reveal" data-i18n="approach.body">
+              以产业真实挑战凝练科研问题，以科研突破形成可落地系统，并让每个环节都成为培养创新型 AI 人才的实践场。
+            </p>
+          </div>
+        </div>
+
+        <div class="process" aria-label="Research approach">
+          <div class="process-line" aria-hidden="true"><span></span></div>
+          <article class="process-step reveal">
+            <div class="step-marker">D</div>
+            <p>01</p>
+            <h3 data-i18n="approach.step1Title">科研突破</h3>
+            <span data-i18n="approach.step1Body">聚焦具身听觉、多模态认知与分布式智能等前沿核心技术。</span>
+          </article>
+          <article class="process-step reveal">
+            <div class="step-marker">T</div>
+            <p>02</p>
+            <h3 data-i18n="approach.step2Title">产业转化</h3>
+            <span data-i18n="approach.step2Body">连接产业前沿需求，在真实场景中验证关键技术并推动落地。</span>
+          </article>
+          <article class="process-step reveal">
+            <div class="step-marker">C</div>
+            <p>03</p>
+            <h3 data-i18n="approach.step3Title">人才培养</h3>
+            <span data-i18n="approach.step3Body">通过产学研用深度融合，培养面向 AI 时代的创新型人才。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="partners section" id="partners">
+        <div class="section-heading">
+          <div class="section-index reveal">05 / <span data-i18n="partners.index">合作</span></div>
+          <div>
+            <p class="section-kicker reveal" data-i18n="partners.kicker">合作单位</p>
+          </div>
+        </div>
+
+        <a class="partner-card reveal" href="https://lc.aispeech.com/laboratory" target="_blank" rel="noreferrer">
+          <span class="partner-label" data-i18n="partners.label">重点实验室</span>
+          <h3 data-i18n="partners.name">江苏省语言计算及应用重点实验室</h3>
+          <p data-i18n="partners.body">围绕语言计算、语音语言智能与产业应用开展协同创新。</p>
+          <i aria-hidden="true">↗</i>
+        </a>
+      </section>
+
+      <section class="connect section" id="connect">
+        <div class="connect-copy reveal">
+          <p class="section-kicker" data-i18n="connect.kicker">同行，让想法抵达更远</p>
+          <h2 data-i18n="connect.title">让机器与人从听见走向理解与认知。</h2>
+          <p data-i18n="connect.body">
+            我们期待与音频、语音、语言及智能交互领域的学生、研究者和合作伙伴展开交流。
+          </p>
+          <a class="contact-email" href="mailto:zhu.mengyao@suda.edu.cn">zhu.mengyao@suda.edu.cn</a>
+        </div>
+        <a class="connect-link reveal" href="mailto:zhu.mengyao@suda.edu.cn">
+          <span data-i18n="connect.cta">开启交流</span>
+          <i>↗</i>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#top" aria-label="Back to top">
+        <img class="brand-logo" src="assets/cali-logo.png" alt="CaLi logo" />
+        <span><strong>CaLi</strong><small data-i18n="brand.affiliation">苏州大学</small></span>
+      </a>
+      <p data-i18n="footer.copy">苏州大学听觉与语言智能研究中心</p>
+      <p>© <span id="year"></span> CaLi</p>
+    </footer>
+  </body>
+</html>
