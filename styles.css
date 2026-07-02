@@ -537,8 +537,7 @@ html[lang="en"] .hero h1 {
 }
 .statement-content h2,
 .section-heading h2,
-.approach-intro h2,
-.connect h2 {
+.approach-intro h2 {
   margin: 0;
   font-family: var(--display);
   font-size: clamp(2.8rem, 5.4vw, 6.2rem);
@@ -568,8 +567,7 @@ html[lang="en"] .hero h1 {
   border-top: 1px solid var(--line);
 }
 .statement-grid p,
-.approach-intro > div > p:last-child,
-.connect-copy > p:last-of-type {
+.approach-intro > div > p:last-child {
   margin: 0;
   color: var(--muted);
   font-size: clamp(1rem, 1.35vw, 1.16rem);
@@ -1318,66 +1316,6 @@ html[lang="en"] .hero h1 {
   box-shadow: 0 1rem 2.8rem rgba(6, 42, 95, 0.11);
   transform: translateY(-2px);
 }
-.connect {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: end;
-  gap: 4rem;
-  color: var(--white);
-  background: var(--suda);
-}
-
-.connect .section-kicker {
-  color: #b6c9e8;
-}
-
-.connect h2 {
-  max-width: 13ch;
-}
-
-.connect-copy > p:last-of-type {
-  max-width: 40rem;
-  margin-top: 2rem;
-  color: rgba(255, 255, 255, 0.68);
-}
-
-.contact-email {
-  display: inline-flex;
-  margin-top: 1.2rem;
-  padding-bottom: 0.2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-  color: rgba(255, 255, 255, 0.82);
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
-}
-
-.connect-link {
-  display: flex;
-  width: clamp(14rem, 20vw, 20rem);
-  height: clamp(14rem, 20vw, 20rem);
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 50%;
-  font-family: var(--display);
-  font-size: 1.35rem;
-  transition: color 250ms ease, background 250ms ease, transform 250ms ease;
-  flex-direction: column;
-  gap: 1.5rem;
-  text-align: center;
-}
-
-.connect-link i {
-  font-family: var(--sans);
-  font-style: normal;
-}
-
-.connect-link:hover {
-  color: var(--suda);
-  background: var(--white);
-  transform: rotate(-5deg);
-}
-
 .site-footer {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -1503,14 +1441,6 @@ html[lang="en"] .hero h1 {
   .research-card > p,
   .research-card ul { grid-column: 3; }
   .research-card > p { min-height: auto; }
-
-  .connect {
-    grid-template-columns: 1fr;
-  }
-
-  .connect-link {
-    justify-self: end;
-  }
 }
 
 @media (max-width: 900px) {
@@ -1721,12 +1651,6 @@ html[lang="en"] .hero h1 {
 
   .join-button {
     width: fit-content;
-  }
-
-  .connect-link {
-    width: 13rem;
-    height: 13rem;
-    justify-self: start;
   }
 
   .site-footer {

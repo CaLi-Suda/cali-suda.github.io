@@ -6,7 +6,6 @@ const translations = {
     "nav.team": "Team",
     "nav.approach": "Innovation Chain",
     "nav.partners": "Join Us",
-    "nav.connect": "Connect",
     "hero.eyebrow": "Center of Auditory and Language Intelligence @ Soochow University",
     "hero.line1": "From sound to",
     "hero.line2": "understanding and cognition.",
@@ -103,10 +102,6 @@ const translations = {
     "partners.name": "Explore auditory and language intelligence with us.",
     "partners.body": "Students interested in audio, speech, language, multimodal intelligence, and agent systems are welcome to join the joint training program and grow through real research questions and industry-facing scenarios.",
     "partners.cta": "Learn about the program",
-    "connect.kicker": "Ideas travel further together",
-    "connect.title": "From hearing to understanding and cognition — for people and machines.",
-    "connect.body": "We welcome conversations with students, researchers, and partners working across audio, speech, language, and intelligent interaction.",
-    "connect.cta": "Start a conversation",
     "footer.copy": "Center of Auditory and Language Intelligence"
   }
 };
