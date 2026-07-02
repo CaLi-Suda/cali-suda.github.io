@@ -1060,14 +1060,69 @@ html[lang="en"] .hero h1 {
   color: var(--muted);
   font-size: clamp(0.82rem, 0.95vw, 0.92rem);
   line-height: 1.68;
-}.approach {
-  background: var(--paper-deep);
 }
 
+.approach {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 18% 28%, rgba(11, 74, 143, 0.1), transparent 28%),
+    radial-gradient(circle at 82% 70%, rgba(33, 123, 177, 0.12), transparent 30%),
+    linear-gradient(135deg, rgba(231, 238, 247, 0.86), var(--paper-deep));
+}
+
+.approach::before,
+.approach::after {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: "";
+}
+
+.approach::before {
+  background:
+    linear-gradient(90deg, rgba(6, 42, 95, 0.07) 1px, transparent 1px),
+    linear-gradient(rgba(6, 42, 95, 0.055) 1px, transparent 1px),
+    linear-gradient(35deg, transparent 0 45%, rgba(11, 74, 143, 0.13) 45% 45.12%, transparent 45.12% 100%),
+    linear-gradient(145deg, transparent 0 58%, rgba(33, 123, 177, 0.12) 58% 58.12%, transparent 58.12% 100%);
+  background-size: 5.5rem 5.5rem, 5.5rem 5.5rem, 100% 100%, 100% 100%;
+  mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.18));
+}
+
+.approach::after {
+  background:
+    radial-gradient(circle at 15% 30%, rgba(6, 42, 95, 0.28) 0 0.18rem, transparent 0.22rem),
+    radial-gradient(circle at 31% 58%, rgba(33, 123, 177, 0.24) 0 0.15rem, transparent 0.2rem),
+    radial-gradient(circle at 54% 24%, rgba(6, 42, 95, 0.22) 0 0.16rem, transparent 0.21rem),
+    radial-gradient(circle at 77% 49%, rgba(33, 123, 177, 0.25) 0 0.18rem, transparent 0.23rem),
+    radial-gradient(circle at 88% 74%, rgba(6, 42, 95, 0.2) 0 0.14rem, transparent 0.19rem);
+}
+
+.approach > * {
+  position: relative;
+  z-index: 1;
+}
 .approach-intro {
   display: grid;
   grid-template-columns: minmax(9rem, 0.3fr) minmax(0, 1fr);
   gap: 4rem;
+}
+
+.approach .section-index {
+  color: var(--suda);
+  font-size: clamp(1.08rem, 1.55vw, 1.55rem);
+  font-weight: 750;
+  letter-spacing: 0.1em;
+}
+
+.approach .section-index span {
+  font-size: clamp(1.25rem, 2vw, 2rem);
+}
+
+.approach .section-kicker {
+  font-size: clamp(1.02rem, 1.55vw, 1.48rem);
+  font-weight: 800;
+  letter-spacing: 0.13em;
 }
 
 .approach-intro h2 {
