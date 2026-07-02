@@ -1333,7 +1333,21 @@ html[lang="en"] .hero h1 {
   text-transform: uppercase;
 }
 
-.site-footer p:last-child {
+.footer-contact {
+  display: grid;
+  gap: 0.35rem;
+  justify-items: center;
+  text-align: center;
+}
+
+.footer-contact a {
+  color: var(--suda);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(6, 42, 95, 0.24);
+}
+
+.site-footer > p:last-child {
   justify-self: end;
 }
 
@@ -1657,8 +1671,13 @@ html[lang="en"] .hero h1 {
     grid-template-columns: 1fr;
   }
 
-  .site-footer p:last-child {
+  .site-footer > p:last-child {
     justify-self: start;
+  }
+
+  .footer-contact {
+    justify-items: start;
+    text-align: left;
   }
 }
 
