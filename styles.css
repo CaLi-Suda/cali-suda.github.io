@@ -500,13 +500,41 @@ html[lang="en"] .hero h1 {
 }
 
 .statement {
+  position: relative;
   display: grid;
+  overflow: hidden;
   grid-template-columns: minmax(9rem, 0.3fr) minmax(0, 1fr);
   gap: 4rem;
   border-top: 1px solid var(--line);
-  background: var(--white);
+  background:
+    linear-gradient(115deg, rgba(6, 42, 95, 0.055) 0 1px, transparent 1px 21rem),
+    linear-gradient(90deg, rgba(6, 42, 95, 0.035) 0 1px, transparent 1px 8rem),
+    linear-gradient(0deg, rgba(6, 42, 95, 0.03) 0 1px, transparent 1px 8rem),
+    var(--white);
 }
 
+.statement::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background:
+    linear-gradient(135deg, transparent 0 29%, rgba(6, 42, 95, 0.11) 29% 29.12%, transparent 29.12% 100%),
+    linear-gradient(25deg, transparent 0 62%, rgba(11, 74, 143, 0.1) 62% 62.14%, transparent 62.14% 100%);
+  opacity: 0.8;
+}
+
+.statement > * {
+  position: relative;
+  z-index: 1;
+}
+
+.statement > .section-index {
+  color: var(--suda);
+  font-size: clamp(1rem, 1.35vw, 1.35rem);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
 .statement-content h2,
 .section-heading h2,
 .approach-intro h2,
@@ -534,15 +562,11 @@ html[lang="en"] .hero h1 {
 }
 
 .statement-grid {
-  display: grid;
-  max-width: 60rem;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(1.5rem, 4vw, 4rem);
+  max-width: 58rem;
   margin-top: 4rem;
   padding-top: 2rem;
   border-top: 1px solid var(--line);
 }
-
 .statement-grid p,
 .approach-intro > div > p:last-child,
 .connect-copy > p:last-of-type {
@@ -1146,9 +1170,6 @@ html[lang="en"] .hero h1 {
     grid-template-columns: 1fr;
   }
 
-  .statement-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 
   .research-card {
     display: grid;
@@ -1296,8 +1317,6 @@ html[lang="en"] .hero h1 {
   }
 
   .statement-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
     margin-top: 3rem;
   }
 
