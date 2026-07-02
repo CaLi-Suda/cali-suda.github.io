@@ -801,6 +801,23 @@ html[lang="en"] .hero h1 {
   background: var(--white);
 }
 
+.team .section-index {
+  color: var(--suda);
+  font-size: clamp(1rem, 1.35vw, 1.35rem);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.team .section-index span {
+  font-size: clamp(1.18rem, 1.85vw, 1.75rem);
+}
+
+.team .section-kicker {
+  font-size: clamp(0.95rem, 1.35vw, 1.3rem);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
 .team .section-heading h2 {
   max-width: 58rem;
 }
@@ -817,76 +834,148 @@ html[lang="en"] .hero h1 {
 
 .team-roster {
   display: grid;
-  overflow: hidden;
-  margin-top: clamp(2.2rem, 4.5vw, 4rem);
-  border: 1px solid var(--line);
-  background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(231, 238, 247, 0.6)),
-    radial-gradient(circle at 92% 10%, rgba(6, 42, 95, 0.1), transparent 34%);
-  box-shadow: 0 1.2rem 3.5rem rgba(6, 42, 95, 0.08);
+  gap: clamp(4rem, 7vw, 6.5rem);
+  margin-top: clamp(3.5rem, 6vw, 6rem);
 }
 
-.team-row {
-  padding: clamp(1.35rem, 2.4vw, 2.2rem) clamp(1.4rem, 3vw, 3rem);
+.team-profile {
+  display: grid;
+  grid-template-columns: minmax(13rem, 0.22fr) minmax(0, 1fr);
+  gap: clamp(2.2rem, 5vw, 5rem);
+  align-items: center;
+  padding-bottom: clamp(3rem, 5vw, 4.5rem);
   border-bottom: 1px solid var(--line);
 }
 
-.team-row:last-child {
+.team-profile:last-child {
+  padding-bottom: 0;
   border-bottom: 0;
 }
 
-.team-roster p {
-  margin: 0;
+.team-person {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.team-photo {
+  width: clamp(10.5rem, 17vw, 18rem);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--paper-deep);
+  box-shadow: 0 1rem 2.5rem rgba(6, 42, 95, 0.1);
+}
+
+.team-person h3 {
+  margin: 1.5rem 0 0;
   color: var(--ink);
   font-family: "Noto Serif SC", var(--display);
-  font-size: clamp(1.65rem, 2.7vw, 3rem);
-  letter-spacing: -0.035em;
-  line-height: 1.25;
+  font-size: clamp(1.8rem, 3vw, 3.1rem);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.08;
 }
 
-.team-profile-link {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.65rem;
-  transition: color 180ms ease;
+.team-person p {
+  margin: 0.35rem 0 0;
+  color: var(--ink);
+  font-size: clamp(1.05rem, 1.4vw, 1.35rem);
+  letter-spacing: 0.02em;
 }
 
-.team-profile-link i {
-  display: inline-flex;
+.team-bio {
+  min-width: 0;
+  color: #243951;
+  font-size: clamp(1rem, 1.2vw, 1.18rem);
+  line-height: 1.85;
+}
+
+.team-bio p {
+  margin: 0;
+}
+
+.team-bio a {
+  color: var(--suda-bright);
+  border-bottom: 1px solid rgba(11, 74, 143, 0.35);
+  overflow-wrap: anywhere;
+}
+
+.team-links {
+  margin-top: 0.25rem !important;
+}
+
+.team-title-line {
+  margin-bottom: 1.5rem !important;
+  color: var(--suda);
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+.team-facts {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0 0 1.4rem;
+}
+
+.team-facts div {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.team-facts dt,
+.team-facts dd {
+  margin: 0;
+}
+
+.team-facts dt::after {
+  content: "：";
+}
+
+.team-honors {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0;
+  margin: 0 0 2rem;
+  list-style: none;
+}
+
+.team-honors li::before {
+  content: "•";
+  margin-right: 0.25rem;
+  color: var(--suda);
+  font-weight: 900;
+}
+
+.team-bio h4 {
+  margin: 2rem 0 0.55rem;
+  color: var(--ink);
+  font-size: clamp(1.05rem, 1.35vw, 1.3rem);
+  font-weight: 750;
+}
+
+.team-photo-placeholder {
+  display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--suda);
-  font-family: var(--sans);
-  font-size: 0.46em;
-  font-style: normal;
-  transform: translateY(-0.16em);
-  transition: transform 180ms ease;
+  color: rgba(6, 42, 95, 0.55);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(231, 238, 247, 0.75)),
+    radial-gradient(circle at 70% 18%, rgba(11, 74, 143, 0.16), transparent 38%);
+  font-family: "Noto Serif SC", var(--display);
+  font-size: clamp(3rem, 6vw, 5.5rem);
 }
 
-.team-profile-link:hover,
-.team-profile-link:focus-visible {
-  color: var(--suda);
+.team-profile-empty {
+  align-items: center;
+  opacity: 0.82;
 }
 
-.team-profile-link:hover i,
-.team-profile-link:focus-visible i {
-  transform: translate(0.12rem, -0.28em);
-}
-
-.team-row small {
-  display: block;
-  max-width: 62rem;
-  margin-top: 0.62rem;
+.team-pending {
   color: var(--muted);
-  font-size: clamp(0.9rem, 1.08vw, 1.06rem);
-  line-height: 1.65;
+  font-size: clamp(1.2rem, 1.8vw, 1.8rem);
 }
-
-.team-row-compact {
-  padding-top: clamp(1.2rem, 2vw, 1.8rem);
-  padding-bottom: clamp(1.2rem, 2vw, 1.8rem);
-}
-
 .approach {
   background: var(--paper-deep);
 }
@@ -1368,11 +1457,32 @@ html[lang="en"] .hero h1 {
   }
 
   .team-roster {
+    gap: 3.5rem;
     margin-top: 3rem;
   }
 
-  .team-roster p {
-    font-size: clamp(1.45rem, 6.8vw, 2.2rem);
+  .team-profile {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  .team-person {
+    justify-items: start;
+    text-align: left;
+  }
+
+  .team-photo {
+    width: min(62vw, 15rem);
+  }
+
+  .team-bio {
+    font-size: 0.98rem;
+    line-height: 1.78;
+  }
+
+  .team-facts div {
+    flex-wrap: wrap;
   }
 
   .research-card {
@@ -1398,12 +1508,19 @@ html[lang="en"] .hero h1 {
     display: none;
   }
 
-  .partner-card {
-    grid-template-columns: 1fr;
+  #sound-field {
+    max-width: 100%;
   }
 
-  .partner-card h3 {
+  .partner-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .partner-card h3,
+  .partner-card p {
     max-width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 
   .partner-card i {
