@@ -1209,6 +1209,23 @@ html[lang="en"] .hero h1 {
   background: var(--paper);
 }
 
+.partners .section-index {
+  color: var(--suda);
+  font-size: clamp(1.08rem, 1.55vw, 1.55rem);
+  font-weight: 750;
+  letter-spacing: 0.1em;
+}
+
+.partners .section-index span {
+  font-size: clamp(1.25rem, 2vw, 2rem);
+}
+
+.partners .section-kicker {
+  font-size: clamp(1.02rem, 1.55vw, 1.48rem);
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
 .join-card {
   position: relative;
   display: grid;
