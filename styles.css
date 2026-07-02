@@ -887,7 +887,7 @@ html[lang="en"] .hero h1 {
 .team-bio {
   min-width: 0;
   color: #243951;
-  font-size: clamp(1rem, 1.2vw, 1.18rem);
+  font-size: clamp(0.9rem, 1.03vw, 1.02rem);
   line-height: 1.85;
 }
 
@@ -1477,8 +1477,8 @@ html[lang="en"] .hero h1 {
   }
 
   .team-bio {
-    font-size: 0.98rem;
-    line-height: 1.78;
+    font-size: 0.9rem;
+    line-height: 1.72;
   }
 
   .team-facts div {
