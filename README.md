@@ -1,6 +1,6 @@
 # CaLi @ Soochow University
 
-Official website for CaLi — 苏州大学听觉与语言智能研究中心 / Center of Auditory and Language Intelligence at Soochow University.
+Official website for CaLi — 苏州大学听觉及语言智能研究中心 / Center of Auditory and Language Intelligence at Soochow University.
 
 ## Local preview
 

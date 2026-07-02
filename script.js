@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    "brand.affiliation": "Soochow University",
+    "brand.affiliation": "Center of Auditory and Language Intelligence",
     "nav.about": "About",
     "nav.research": "Research",
     "nav.team": "Team",
@@ -77,7 +77,7 @@ const translations = {
     "connect.title": "From hearing to understanding and cognition — for people and machines.",
     "connect.body": "We welcome conversations with students, researchers, and partners working across audio, speech, language, and intelligent interaction.",
     "connect.cta": "Start a conversation",
-    "footer.copy": "Center of Auditory and Language Intelligence @ Soochow University"
+    "footer.copy": "Center of Auditory and Language Intelligence"
   }
 };
 
