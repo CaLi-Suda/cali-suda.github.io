@@ -83,7 +83,34 @@ const originalText = new Map();
 document.querySelectorAll("[data-i18n]").forEach((node) => {
   originalText.set(node.dataset.i18n, node.textContent.trim());
 });
+const aboutHighlights = [
+  "江苏省语言计算及应用重点实验室",
+  "IEEE Fellow、前华为高级专家及江苏省产业教授等领衔指导",
+  "产学研用",
+  "具身听觉、分布式智能体"
+];
 
+function escapeHtml(text) {
+  return text.replace(/[&<>"]/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;"
+  }[char]));
+}
+
+function applyAboutHighlights() {
+  const node = document.querySelector('[data-highlight="about"]');
+  if (!node || currentLanguage !== "zh") return;
+
+  let text = originalText.get("about.body1");
+  aboutHighlights.forEach((phrase) => {
+    text = text.replace(phrase, `__HL__${phrase}__/HL__`);
+  });
+
+  node.innerHTML = escapeHtml(text)
+    .replace(/__HL__(.*?)__\/HL__/g, '<span class="statement-highlight">$1</span>');
+}
 let currentLanguage = "zh";
 const languageToggle = document.querySelector(".language-toggle");
 
@@ -95,6 +122,7 @@ function setLanguage(language) {
     const key = node.dataset.i18n;
     node.textContent = language === "en" ? translations.en[key] : originalText.get(key);
   });
+  applyAboutHighlights();
 
   languageToggle.textContent = language === "zh" ? "EN" : "中文";
   languageToggle.setAttribute(
@@ -106,6 +134,7 @@ function setLanguage(language) {
 languageToggle.addEventListener("click", () => {
   setLanguage(currentLanguage === "en" ? "zh" : "en");
 });
+applyAboutHighlights();
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".site-nav");
