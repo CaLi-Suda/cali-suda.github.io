@@ -1778,33 +1778,24 @@ html[lang="en"] .hero h1 {
 }
 
 .training-hero {
-  padding-top: clamp(3rem, 6vw, 6rem);
+  padding-top: clamp(2.5rem, 5vw, 4.5rem);
+  padding-bottom: clamp(3rem, 5vw, 5rem);
   background:
-    linear-gradient(135deg, rgba(231, 238, 247, 0.64), rgba(255, 253, 249, 0.78)),
-    radial-gradient(circle at 82% 28%, rgba(11, 74, 143, 0.12), transparent 30rem);
+    radial-gradient(circle at 82% 18%, rgba(11, 74, 143, 0.08), transparent 26rem),
+    linear-gradient(135deg, rgba(231, 238, 247, 0.5), rgba(255, 253, 249, 0.78));
 }
 
 .training-frame {
-  max-width: 86rem;
+  max-width: 74rem;
   margin: 0 auto;
-  padding: clamp(1.2rem, 2vw, 1.8rem);
-  border: 1px solid rgba(6, 42, 95, 0.16);
-  background: rgba(255, 255, 255, 0.28);
-  box-shadow: 0 2rem 5.5rem rgba(6, 42, 95, 0.08);
 }
 
 .training-frame-inner {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: clamp(2rem, 6vw, 6rem);
+  gap: clamp(2rem, 5vw, 4rem);
   align-items: end;
-  padding: clamp(2.4rem, 6vw, 5rem);
-  border: 1px solid rgba(6, 42, 95, 0.12);
-  background:
-    linear-gradient(120deg, rgba(255, 255, 255, 0.72), rgba(231, 238, 247, 0.46)),
-    linear-gradient(90deg, rgba(6, 42, 95, 0.035) 1px, transparent 1px),
-    linear-gradient(rgba(6, 42, 95, 0.03) 1px, transparent 1px);
-  background-size: auto, 5.5rem 5.5rem, 5.5rem 5.5rem;
+  padding: 0;
 }
 
 .training-label,
@@ -1826,18 +1817,18 @@ html[lang="en"] .hero h1 {
   margin: 0;
   color: var(--ink);
   font-family: "Noto Serif SC", var(--display);
-  font-size: clamp(3rem, 6vw, 6.9rem);
+  font-size: clamp(2.7rem, 5vw, 5.4rem);
   font-weight: 500;
   letter-spacing: -0.055em;
   line-height: 1.06;
 }
 
 .training-copy p:last-child {
-  max-width: 58rem;
+  max-width: 48rem;
   margin: 1.6rem 0 0;
   color: #4f5f76;
-  font-size: clamp(1.05rem, 1.45vw, 1.35rem);
-  line-height: 1.9;
+  font-size: clamp(1rem, 1.25vw, 1.18rem);
+  line-height: 1.8;
 }
 
 .training-hero-cta,
