@@ -273,7 +273,7 @@ html[lang="en"] .hero .eyebrow {
 html[lang="zh-CN"] .hero h1 {
   max-width: 8.6em;
   font-family: "Noto Serif SC", "Songti SC", var(--display);
-  font-size: clamp(4.35rem, 7.8vw, 8.75rem);
+  font-size: clamp(3.85rem, 6.9vw, 7.8rem);
   letter-spacing: -0.08em;
   line-height: 1.03;
 }
@@ -1284,7 +1284,7 @@ html[lang="en"] .hero h1 {
 
   html[lang="zh-CN"] .hero h1 {
     max-width: 100%;
-    font-size: clamp(3.65rem, 13.8vw, 5rem);
+    font-size: clamp(3.15rem, 11.8vw, 4.45rem);
     line-height: 1.05;
   }
 
