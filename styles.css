@@ -997,12 +997,12 @@ html[lang="en"] .hero h1 {
 
 .industry-heading h3 {
   margin: 0;
-  color: var(--ink);
-  font-family: "Noto Serif SC", var(--display);
-  font-size: clamp(2rem, 3.6vw, 4rem);
-  font-weight: 500;
-  letter-spacing: -0.045em;
-  line-height: 1.05;
+  color: var(--suda);
+  font-family: var(--sans);
+  font-size: clamp(0.95rem, 1.35vw, 1.3rem);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.25;
 }
 
 .mentor-grid {
