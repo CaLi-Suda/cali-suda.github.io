@@ -110,12 +110,20 @@ const originalText = new Map();
 document.querySelectorAll("[data-i18n]").forEach((node) => {
   originalText.set(node.dataset.i18n, node.textContent.trim());
 });
-const aboutHighlights = [
-  "江苏省语言计算及应用重点实验室",
-  "IEEE Fellow、前华为高级专家及江苏省产业教授等领衔指导",
-  "产学研用",
-  "具身听觉、分布式智能体"
-];
+const aboutHighlights = {
+  zh: [
+    "江苏省语言计算及应用重点实验室",
+    "IEEE Fellow、前华为高级专家及江苏省产业教授等领衔指导",
+    "产学研用",
+    "具身听觉、分布式智能体"
+  ],
+  en: [
+    "Jiangsu Provincial Key Laboratory for Language Computing and Application",
+    "guided by an IEEE Fellow, former Huawei senior experts, and Jiangsu Industrial Professors",
+    "industry, academia, research, and application",
+    "embodied audition and distributed agents"
+  ]
+};
 
 function escapeHtml(text) {
   return text.replace(/[&<>"]/g, (char) => ({
@@ -128,10 +136,12 @@ function escapeHtml(text) {
 
 function applyAboutHighlights() {
   const node = document.querySelector('[data-highlight="about"]');
-  if (!node || currentLanguage !== "zh") return;
+  if (!node) return;
 
-  let text = originalText.get("about.body1");
-  aboutHighlights.forEach((phrase) => {
+  let text = currentLanguage === "en"
+    ? translations.en["about.body1"]
+    : originalText.get("about.body1");
+  aboutHighlights[currentLanguage].forEach((phrase) => {
     text = text.replace(phrase, `__HL__${phrase}__/HL__`);
   });
 
