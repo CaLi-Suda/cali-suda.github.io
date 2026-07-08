@@ -1939,6 +1939,12 @@ html[lang="en"] .statement-grid p {
   background: rgba(255, 253, 249, 0.9);
 }
 
+
+.training-direction-grid article {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
 .training-target-grid span,
 .track-index {
   color: var(--suda);
@@ -2081,8 +2087,9 @@ html[lang="en"] .statement-grid p {
 .resume-upload {
   position: relative;
   display: inline-flex;
+  margin-top: auto;
+  padding-top: 1.25rem;
   width: fit-content;
-  margin-top: 1.25rem;
   align-items: center;
   cursor: pointer;
 }
