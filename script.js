@@ -59,6 +59,7 @@ const translations = {
     "team.huRole": "Associate Professor",
     "team.xuName": "Chunyang Xu",
     "team.xuRole": "Lecturer",
+    "team.xuBio": "Chunyang Xu received his PhD in acoustics from The Bartlett, University College London, under the supervision of Professor Kang Jian, foreign member of the Chinese Academy of Engineering and Fellow of the Royal Academy of Engineering. He received his bachelor\u0027s degree in physics-acoustics from Tongji University. He was previously a senior research engineer at Huawei 2012 Laboratories, working on intelligent acoustics and audio algorithms and advancing research evolution and engineering validation in adaptive active noise control, MIMO acoustic systems, psychoacoustics, and spatial audio. His research focuses on intelligent acoustic systems, active noise control, multichannel sound field control, spatial audio, and immersive acoustic perception evaluation. He has long served as a reviewer for journals and conferences including JASA and IEEE TASLP.",
     "team.pending": "Content to be updated",
     "team.industryKicker": "Industry collaboration",
     "team.industryTitle": "AISpeech Industry Mentors",
