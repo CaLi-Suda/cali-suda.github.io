@@ -228,7 +228,7 @@ Object.assign(translations.en, {
   "members.undergraduate.0": "Junzhe Liu",
   "members.undergraduate.1": "Haowen Hua",
   "members.undergraduate.2": "Sen Lin",
-  "members.undergraduate.3": "Haozhi Guo",
+  "members.undergraduate.3": "Zhihao Guo",
   "members.undergraduate.4": "Chuansheng Wu",
   "members.undergraduate.5": "Yuchen Sun",
   "members.undergraduate.6": "Manman Li"
