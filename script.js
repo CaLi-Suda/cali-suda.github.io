@@ -108,6 +108,136 @@ const translations = {
   }
 };
 
+Object.assign(translations.en, {
+  "nav.news": "News",
+  "news.index": "NEWS",
+  "news.kicker": "From the lab",
+  "news.title": "Center news",
+  "news.paperCategory": "Publications",
+  "news.paperTitle": "Two lab papers accepted at NCMMSC 2026",
+  "news.awardCategory": "Awards",
+  "news.awardTitle": "Undergraduate team wins second prize in Task 1 of the CCF Advanced Audio Technology Competition",
+  "news.awardBody": "Congratulations to Junzhe Liu (2024 cohort) and Zeyi Shao (2023 cohort) on winning second prize in Task 1 of the second CCF Advanced Audio Technology Competition in 2026.",
+  "research.detailLabel": "Research topics",
+  "research.detail0": "Speech recognition and generation, multi-speaker audio processing, and joint perception of speech, vision, and context.",
+  "research.detail1": "Speech enhancement and separation, microphone arrays, spatial audio, acoustic event analysis, and auditory signal processing.",
+  "research.detail2": "Multichannel spatial audio understanding, large language model task planning, semantic communication, and multi-agent collaboration.",
+  "research.detail3": "High-performance model kernels, large-model training and inference optimization, cloud–edge–device inference, and big data systems.",
+  "team.facultyGroup": "Faculty",
+  "team.industryGroup": "Industry mentors",
+  "team.graduateGroup": "Graduate students",
+  "team.undergraduateGroup": "Undergraduates",
+  "team.graduatePending": "Member profiles will be added soon.",
+  "team.liuName": "Junzhe Liu",
+  "team.liuYear": "2024 cohort · Undergraduate",
+  "team.studentAward": "Second prize, Task 1, CCF Advanced Audio Technology Competition 2026",
+});
+
+Object.assign(translations.en,{
+  "members.doctoral": "Doctoral students",
+  "members.doctoral.0": "Yujie Xiong",
+  "members.year2026": "2026 cohort",
+  "members.masters": "Master’s students",
+  "members.masters.0": "Zhiheng Jin",
+  "members.masters.1": "Yaokun Huang",
+  "members.masters.2": "Yixing Huang",
+  "members.undergraduate": "Undergraduates",
+  "members.undergraduate.0": "Junzhe Liu",
+  "members.year2024": "2024 cohort",
+  "members.undergraduate.1": "Haowen Hua",
+  "members.undergraduate.2": "Sen Lin"
+});
+
+Object.assign(translations.en, {
+  "news.wechatOne": "WeChat article 1",
+  "news.wechatTwo": "WeChat article 2"
+});
+
+Object.assign(translations.en, {
+ "nav.home":"Home", "nav.news":"News", "nav.team":"Members", "nav.projects":"Projects",
+ "team.title":"Faculty and student members.", "projects.index":"PROJECTS", "projects.kicker":"Research and open source",
+ "projects.title":"Projects", "projects.pending":"In preparation."
+});
+Object.assign(translations.en, {"news.homeTitle":"News", "news.all":"View all news →"});
+Object.assign(translations.en, {
+ "news.talkCategory": "Academic talk",
+ "news.talkBody": "Shengchen Li from Xi’an Jiaotong-Liverpool University visited the center and gave a talk titled ‘Copyright Management Technologies for Generative Music Models’."
+});
+Object.assign(translations.en, {
+ "news.joinCategory":"New members",
+ "news.joinBody":"Welcome Shichao Hu and Chunyang Xu to the team!",
+ "news.foundedCategory":"Center news",
+ "news.foundedBody":"The Center of Auditory and Language Intelligence at Soochow University was established."
+});
+Object.assign(translations.en, {
+ "news.visitCategory":"Academic event",
+ "news.visitBody":"The Soochow University event in the CCF Technical Committee on Speech, Dialogue and Auditory Processing’s ‘University Visits’ series was successfully held.",
+ "news.wechatPost":"WeChat post"
+});
+Object.assign(translations.en, {
+  "hero.line1": "From sound to",
+  "hero.line2": "understanding and cognition",
+  "about.kicker": "Listen deeper. Think wider",
+  "about.title": "Research anchored in industry. Talent prepared for the AI era",
+  "research.title": "From perception and cognition to intelligent engineering",
+  "research.card1Title": "Language & Multimodal Perception",
+  "research.detailLabel": "Research topics",
+  "research.card2Title": "Audio Signal Analysis & Processing",
+  "research.card3Title": "Multimodal & Language Cognition",
+  "research.card4Title": "High-Performance Computing & Intelligent Engineering",
+  "news.homeTitle": "Lab news",
+  "partners.kicker": "Join us",
+  "partners.name": "Explore auditory and language intelligence with us",
+  "approach.kicker": "One continuous innovation chain",
+  "approach.title": "Discover. Translate. Cultivate",
+  "approach.step1Title": "Discover",
+  "approach.step2Title": "Translate",
+  "approach.step3Title": "Cultivate",
+  "team.kicker": "Laboratory research team",
+  "team.title": "Faculty and student members",
+  "team.facultyGroup": "Faculty",
+  "team.yuName": "Kai Yu",
+  "team.zhuName": "Mengyao Zhu",
+  "team.huName": "Shichao Hu",
+  "team.xuName": "Chunyang Xu",
+  "members.doctoral": "Doctoral students",
+  "members.doctoral.0": "Yujie Xiong",
+  "members.masters": "Master’s students",
+  "members.masters.0": "Zhiheng Jin",
+  "members.masters.1": "Yaokun Huang",
+  "members.masters.2": "Yixing Huang",
+  "members.undergraduate": "Undergraduates",
+  "members.undergraduate.0": "Junzhe Liu",
+  "members.undergraduate.1": "Haowen Hua",
+  "members.undergraduate.2": "Sen Lin",
+  "news.kicker": "From the lab",
+  "news.title": "Center news",
+  "projects.kicker": "Research and open source",
+  "projects.title": "Projects",
+  "news.paperTitle": "Two lab papers accepted at NCMMSC 2026."
+});
+Object.assign(translations.en, {"news.foundedPrefix":"The ", "news.foundedSuffix":" at Soochow University was established."});
+Object.assign(translations.en, {"nav.papers":"Papers", "papers.title":"Papers", "papers.accepted":"Accepted"});
+Object.assign(translations.en, {
+  "members.year2025": "2025 cohort",
+  "members.doctoral.0": "Yujie Xiong",
+  "members.masters.0": "Zhiheng Jin",
+  "members.masters.1": "Yaokun Huang",
+  "members.masters.2": "Yixing Huang",
+  "members.masters.3": "Sen Ma",
+  "members.undergraduate.0": "Junzhe Liu",
+  "members.undergraduate.1": "Haowen Hua",
+  "members.undergraduate.2": "Sen Lin",
+  "members.undergraduate.3": "Haozhi Guo",
+  "members.undergraduate.4": "Chuansheng Wu",
+  "members.undergraduate.5": "Yuchen Sun",
+  "members.undergraduate.6": "Manman Li"
+});
+
+Object.assign(translations.en, {"members.year2027": "2027 cohort"});
+Object.assign(translations.en, {"members.undergraduate.7": "Zeyi Shao", "members.year2023": "2023 cohort"});
+Object.assign(translations.en, {"news.reportDetails":"Report details","news.wangTalkBody":"Zehao Wang from The Chinese University of Hong Kong, Shenzhen visited the center and gave a talk on efficient computation in acoustics and its applications in contemporary professional audio and performing arts technology.","news.shiTalkBody":"Dr. Xuan Shi from the University of Southern California (USC) visited the center and delivered a talk titled “Speech Science-Informed Representation Learning for Large Speech Language Models”."});
+Object.assign(translations.en, {"news.studentsWelcome":"Welcome to the graduate and undergraduate students of the 2026 cohort joining our team!"});
 const originalText = new Map();
 document.querySelectorAll("[data-i18n]").forEach((node) => {
   originalText.set(node.dataset.i18n, node.textContent.trim());
@@ -155,6 +285,10 @@ const languageToggle = document.querySelector(".language-toggle");
 
 function setLanguage(language) {
   currentLanguage = language;
+  document.querySelectorAll('.site-nav a, .brand[href="index.html"], .news-all').forEach(link => {
+    const href = link.getAttribute('href').split('?')[0];
+    link.setAttribute('href', href + '?lang=' + language);
+  });
   document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
@@ -173,7 +307,7 @@ function setLanguage(language) {
 languageToggle.addEventListener("click", () => {
   setLanguage(currentLanguage === "en" ? "zh" : "en");
 });
-applyAboutHighlights();
+setLanguage(new URLSearchParams(location.search).get('lang') === 'en' ? 'en' : 'zh');
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".site-nav");
@@ -216,6 +350,7 @@ document.querySelectorAll(".reveal").forEach((element, index) => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const canvas = document.getElementById("sound-field");
+if (canvas) {
 const context = canvas.getContext("2d");
 const visual = document.querySelector(".hero-visual");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -377,3 +512,5 @@ prefersReducedMotion.addEventListener("change", () => {
   cancelAnimationFrame(frame);
   drawSoundField();
 });
+
+}

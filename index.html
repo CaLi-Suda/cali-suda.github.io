@@ -15,14 +15,14 @@
     />
     <title>CaLi | 苏州大学听觉及语言智能研究中心</title>
     <link rel="icon" type="image/png" href="assets/cali-center-logo-20260702.png" />
-    <link rel="stylesheet" href="styles.css?v=20260713-hu-photo-v2" />
-    <script src="script.js?v=20260713-hu-photo-v2" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261102-papers-page" />
+    <script src="script.js?v=20261103-welcome" defer></script>
   </head>
-  <body>
+  <body class="home-page">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="CaLi home">
+      <a class="brand" href="index.html" aria-label="CaLi home">
         <img class="brand-logo" src="assets/cali-center-logo-20260702.png" alt="CaLi logo" />
         <span>
           <strong>CaLi</strong>
@@ -36,36 +36,36 @@
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#about" data-i18n="nav.about">关于我们</a>
-        <a href="#research" data-i18n="nav.research">研究方向</a>
-        <a href="#team" data-i18n="nav.team">研究团队</a>
-        <a href="#approach" data-i18n="nav.approach">创新链条</a>
-        <a href="#partners" data-i18n="nav.partners">加入我们</a>
-        <button class="language-toggle" type="button" aria-label="Switch to English">EN</button>
-      </nav>
+<a href="index.html" aria-current="page" data-i18n="nav.home">首页</a>
+<a href="news.html" data-i18n="nav.news">动态</a>
+<a href="papers.html" data-i18n="nav.papers">论文</a>
+<a href="members.html" data-i18n="nav.team">成员</a>
+<a href="projects.html" data-i18n="nav.projects">项目</a>
+<a href="join.html" data-i18n="nav.partners">加入我们</a>
+<button class="language-toggle" type="button" aria-label="Switch to English">EN</button></nav>
     </header>
 
     <main id="main">
-      <section class="hero" aria-labelledby="hero-title">
+<section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow reveal" data-i18n="hero.eyebrow">苏州大学听觉及语言智能研究中心</p>
+          <p class="eyebrow reveal hero-center-name"><span data-i18n="hero.eyebrow">苏州大学听觉及语言智能研究中心</span><span class="hero-center-english" lang="en">Center of Auditory and Language Intelligence, CaLi</span></p>
           <h1 class="reveal" id="hero-title">
-            <span data-i18n="hero.line1">从声音到理解</span>
-            <em data-i18n="hero.line2">和认知</em>
+            <span data-i18n="hero.line1">从声音到理解</span><em data-i18n="hero.line2">和认知</em>
           </h1>
           <p class="hero-intro reveal" data-i18n="hero.intro">
             面向声音、听觉、语音、知识与认知的智能融合，聚焦具身听觉、分布式智能体、多模态感知与智能工程，建设创新科研与人才培养基地。
           </p>
-          <div class="hero-actions reveal">
-            <a class="button button-primary" href="#research">
-              <span data-i18n="hero.ctaPrimary">探索研究方向</span>
-              <span aria-hidden="true">↘</span>
-            </a>
-            <a class="button button-ghost" href="https://github.com/CaLi-Suda" target="_blank" rel="noreferrer">
-              <span data-i18n="hero.ctaSecondary">访问 GitHub</span>
-              <span aria-hidden="true">↗</span>
-            </a>
+<div class="statement-content hero-about" id="about">
+          <p class="section-kicker reveal" data-i18n="about.kicker">听得更深，想得更远</p>
+          <h2 class="reveal" data-i18n="about.title">
+            源于产业真实问题，面向 AI 时代培养创新人才
+          </h2>
+          <div class="statement-grid reveal">
+            <p data-i18n="about.body1" data-highlight="about">
+              听觉及语言智能研究中心隶属于苏州大学。作为江苏省语言计算及应用重点实验室的重要依托单位，中心是由江苏省及苏州大学共同支持建设的创新型人才培养基地。中心汇聚顶尖师资团队，由 IEEE Fellow、前华为高级专家及江苏省产业教授等领衔指导，并与 C9 高校建立科研直连机制，实现产业前沿需求的无缝对接。中心始终坚持以真实产业问题为创新源头，构建“产学研用”深度融合的创新共同体，聚焦具身听觉、分布式智能体等前沿核心技术，贯通关键技术突破到产业场景落地的全链条创新体系，致力于培养 AI 时代下的创新型人才。
+            </p>
           </div>
+        </div>
         </div>
 
         <div class="hero-visual" aria-hidden="true">
@@ -82,33 +82,15 @@
         </div>
 
         <p class="hero-side-note" data-i18n="hero.sideNote">中国 · 苏州大学</p>
-        <a class="scroll-cue" href="#about" aria-label="Scroll to about section">
-          <span data-i18n="hero.scroll">向下探索</span>
-          <i></i>
-        </a>
       </section>
 
-      <section class="statement section" id="about">
-        <div class="section-index reveal">01 / <span data-i18n="about.index">关于</span></div>
-        <div class="statement-content">
-          <p class="section-kicker reveal" data-i18n="about.kicker">听得更深，想得更远</p>
-          <h2 class="reveal" data-i18n="about.title">
-            源于产业真实问题，面向 AI 时代培养创新人才。
-          </h2>
-          <div class="statement-grid reveal">
-            <p data-i18n="about.body1" data-highlight="about">
-              听觉及语言智能研究中心隶属于苏州大学。作为江苏省语言计算及应用重点实验室的重要依托单位，中心是由江苏省及苏州大学共同支持建设的创新型人才培养基地。中心汇聚顶尖师资团队，由 IEEE Fellow、前华为高级专家及江苏省产业教授等领衔指导，并与 C9 高校建立科研直连机制，实现产业前沿需求的无缝对接。中心始终坚持以真实产业问题为创新源头，构建“产学研用”深度融合的创新共同体，聚焦具身听觉、分布式智能体等前沿核心技术，贯通关键技术突破到产业场景落地的全链条创新体系，致力于培养 AI 时代下的创新型人才。
-            </p>
-          </div>
-        </div>
-      </section>
+
 
       <section class="research section" id="research">
         <div class="section-heading">
-          <div class="section-index reveal">02 / <span data-i18n="research.index">研究</span></div>
+          <div class="section-index reveal"><span data-i18n="research.index">研究</span></div>
           <div>
-            <p class="section-kicker reveal" data-i18n="research.kicker">四个彼此连接的前沿方向</p>
-            <h2 class="reveal" data-i18n="research.title">从感知与认知走向智能工程。</h2>
+            <h2 class="reveal" data-i18n="research.title">从感知与认知走向智能工程</h2>
           </div>
         </div>
 
@@ -127,7 +109,7 @@
               <li data-i18n="research.card1Tag2">多模态融合</li>
               <li data-i18n="research.card1Tag3">具身感知</li>
             </ul>
-          </article>
+          <div class="research-detail"><h4 data-i18n="research.detailLabel" >研究内容</h4><p data-i18n="research.detail0" >语音识别与生成、多说话人音频处理，以及语音、视觉与上下文信息的协同感知。</p></div></article>
 
           <article class="research-card reveal">
             <div class="card-number">02</div>
@@ -143,7 +125,7 @@
               <li data-i18n="research.card2Tag2">空间音频</li>
               <li data-i18n="research.card2Tag3">声学分析</li>
             </ul>
-          </article>
+          <div class="research-detail"><h4 data-i18n="research.detailLabel" >研究内容</h4><p data-i18n="research.detail1" >语音增强与分离、麦克风阵列与空间音频、声学事件分析，以及听觉信号处理。</p></div></article>
 
           <article class="research-card reveal">
             <div class="card-number">03</div>
@@ -159,7 +141,7 @@
               <li data-i18n="research.card3Tag2">跨模态推理</li>
               <li data-i18n="research.card3Tag3">分布式智能体</li>
             </ul>
-          </article>
+          <div class="research-detail"><h4 data-i18n="research.detailLabel" >研究内容</h4><p data-i18n="research.detail2" >多通道空间音频理解、大语言模型任务规划、语义通讯，以及多智能体协同。</p></div></article>
 
           <article class="research-card reveal">
             <div class="card-number">04</div>
@@ -175,205 +157,72 @@
               <li data-i18n="research.card4Tag2">高性能计算</li>
               <li data-i18n="research.card4Tag3">智能工程</li>
             </ul>
-          </article>
+          <div class="research-detail"><h4 data-i18n="research.detailLabel" >研究内容</h4><p data-i18n="research.detail3" >高性能模型内核、大模型训练与推理优化、云—边—端协同推理，以及大数据系统。</p></div></article>
         </div>
       </section>
 
-      <section class="team section" id="team">
-        <div class="section-heading">
-          <div class="section-index reveal">03 / <span data-i18n="team.index">团队</span></div>
-          <div>
-            <p class="section-kicker reveal" data-i18n="team.kicker">实验室研究团队</p>
-            <h2 class="team-statement reveal" data-i18n="team.title">高校导师与产业导师共同参与指导。</h2>
-          </div>
-        </div>
-
-        <div class="team-roster reveal">
-          <article class="team-profile">
-            <div class="team-person">
-              <img class="team-photo" src="assets/yu-kai.png" alt="俞凯" />
-              <h3 data-i18n="team.yuName">俞凯</h3>
-              <p data-i18n="team.yuRole">主任</p>
-            </div>
-            <div class="team-bio">
-              <p data-i18n="team.yuBio">俞凯，上海交通大学特聘教授、博导，思必驰公司联合创始人、首席科学家。国家“万人计划”科技创新领军人才，曾获国家自然科学基金委青年优青、上海市“东方学者”特聘教授。清华大学自动化系本科、硕士，英国剑桥大学工程系博士。长期从事人工智能领域的智能语音及语言处理、人机交互、模式识别及机器学习的研究和产业化工作。在语音识别及合成、自然语言理解、口语对话系统、认知型人机交互等方面取得了一系列国际先进的研究、工程和产业化成果。在国际一流会议和期刊发表论文200余篇，获得 Computer Speech and Language、Speech Communication 等顶级期刊最优论文奖和 InterSpeech 等多个顶级国际会议优秀论文奖，在语音识别、对话系统等一系列国际评测中获得冠军。中国大陆首位国际语音通讯协会（International Speech Communication Association, ISCA）会士，国际电子电气工程师协会（IEEE）高级会员，中国大陆高校首个 IEEE Speech and Language Processing Technical Committee 委员（2017-2019），IEEE Transactions on Audio Speech and Language Processing 副主编，曾任 InterSpeech 等国际会议程序委员会主席，ACL、EMNLP 等国际会议研究领域主席。</p>
-              <p class="team-links"><span data-i18n="team.homepage">个人主页：</span><a href="https://x-lance.sjtu.edu.cn/~kaiyu/index.html" target="_blank" rel="noreferrer">https://x-lance.sjtu.edu.cn/~kaiyu/index.html</a></p>
-              <p class="team-links"><span data-i18n="team.labLink">上海交通大学跨媒体语言智能实验室：</span><a href="https://x-lance.sjtu.edu.cn" target="_blank" rel="noreferrer">https://x-lance.sjtu.edu.cn</a></p>
-            </div>
-          </article>
-
-          <article class="team-profile">
-            <div class="team-person">
-              <img class="team-photo" src="assets/zhu-mengyao-20260702.png" alt="朱梦尧" />
-              <h3 data-i18n="team.zhuName">朱梦尧</h3>
-            </div>
-            <div class="team-bio">
-              <p data-i18n="team.zhuBio">朱梦尧，苏州大学未来学院教授，前华为高级专家。博士毕业于浙江大学，研究方向智能声学计算与人工智能。曾任上海大学副教授，获得上海市科技进步三等奖。2019年4月，上海大学与华为双聘，开展空间音频产业化相关工作。主导了自主可控空间音频标准和生态建设，部署于数千万鸿蒙生态产品上。目前担任世界超高清产业联盟（UWA）音频标准组联席组长，中国电子音响行业协会声音与音乐技术专委会副主任。主要研究方向智能声学与信号处理，以及人工智能。面向人机融合的声学具身智能，涵盖了声学与音频信号处理、语音与音频编码、空间音频重放、主动声场控制等方面。在国际一流的会议和期刊上发表近100篇论文，专利20余项。2019年5月起上海大学与华为双聘，开展空间音频产业化相关工作。主导了自主可控空间音频标准和生态建设，成功在数千万终端设备上商用落地。主导矢量麦克风、6自由度空间音频等一系列创新项目。负责建设全球最大的声场实验室。发起和组织了“声华杯”、“先进音频技术竞赛”，成为本领域规模最大、影响力最广的学术赛事之一。</p>
-              <p class="team-links"><span data-i18n="team.homepage">个人主页：</span><a href="https://web.suda.edu.cn/zmy2/" target="_blank" rel="noreferrer">https://web.suda.edu.cn/zmy2/</a></p>
-            </div>
-          </article>
-
-          <article class="team-profile">
-            <div class="team-person">
-              <img class="team-photo" src="assets/hu-shichao-20260713-v2.jpg" alt="胡诗超" />
-              <h3 data-i18n="team.huName">胡诗超</h3>
-              <p data-i18n="team.huRole">副教授</p>
-            </div>
-            <div class="team-bio">
-              <p data-i18n="team.huBio">胡诗超，2013 年本科毕业于北京邮电大学通信工程专业，2019 年于日本东北大学取得声学信号处理博士学位，期间曾先后于理音株式会社（日本东京）和 Meta（美国西雅图）工作与实习，从事双耳穿戴声学研究。博士毕业后先后在腾讯音乐和华为担任高级研发工程师和主任工程师。主要研究方向是空间听觉和智能声学处理。在本领域发表多篇国际权威期刊、会议及专利。研究成果成功落地多项用户应用和终端产品。</p>
-            </div>
-          </article>
-
-          <article class="team-profile">
-            <div class="team-person">
-              <img class="team-photo" src="assets/xu-chunyang-20260708.jpg" alt="徐春阳" />
-              <h3 data-i18n="team.xuName">徐春阳</h3>
-              <p data-i18n="team.xuRole">讲师</p>
-            </div>
-            <div class="team-bio">
-              <p data-i18n="team.xuBio">徐春阳，博士毕业于伦敦大学学院 The Bartlett 声学专业，师从中国工程院外籍院士、英国皇家工程院院士康健教授，本科毕业于同济大学物理学-声学专业。前华为 2012 实验室高级研究工程师，从事智能声学与音频算法研发，推动自适应主动噪声控制、MIMO 声学系统、心理声学及空间音频等技术算法研究演进与工程验证。主要研究方向为智能声学系统、主动噪声控制、多通道声场控制、空间音频与沉浸式声学感知评价，并长期担任 JASA、IEEE TASLP 等期刊和会议审稿人。</p>
-            </div>
-          </article>
-        </div>
-        <div class="industry-mentors reveal" aria-labelledby="industry-mentors-title">
-          <div class="industry-heading">
-            <p class="section-kicker" data-i18n="team.industryKicker">产业协同</p>
-            <h3 id="industry-mentors-title" data-i18n="team.industryTitle">思必驰产业导师</h3>
-          </div>
-          <div class="mentor-grid">
-            <article class="mentor-card">
-              <img src="assets/mentor-zouping.png" alt="邹平" />
-              <div>
-                <h4 data-i18n="team.mentorZouName">邹平</h4>
-                <p class="mentor-role" data-i18n="team.mentorZouRole">思必驰联合创始人</p>
-                <p data-i18n="team.mentorZouBio">英国谢菲尔德大学博士，清华大学本硕，美国计算机协会（ACM）会员，苏州市工业园区领军人才。研究方向涵盖模式识别、图像识别、自然语言处理、知识图谱及智能体系统与应用研究。</p>
-              </div>
-            </article>
-            <article class="mentor-card">
-              <img src="assets/mentor-zhouqiang.png" alt="周强" />
-              <div>
-                <h4 data-i18n="team.mentorZhouName">周强</h4>
-                <p class="mentor-role" data-i18n="team.mentorZhouRole">思必驰研发总监</p>
-                <p data-i18n="team.mentorZhouBio">上海交通大学在读博士，苏州大学硕士，中国计算机学会语音对话及听觉专委会执行委员。长期从事语音信号处理研发，包括回声消除、啸叫抑制、麦克风阵列语音分离等。</p>
-              </div>
-            </article>
-            <article class="mentor-card">
-              <img src="assets/mentor-xuefeng.png" alt="薛峰" />
-              <div>
-                <h4 data-i18n="team.mentorXueName">薛峰</h4>
-                <p class="mentor-role" data-i18n="team.mentorXueRole">思必驰研发总监</p>
-                <p data-i18n="team.mentorXueBio">苏州大学硕士，2009 年加入思必驰，长期从事语音增强、语音识别以及神经网络编译器研发，近期负责海外多语种对话系统建设。</p>
-              </div>
-            </article>
-            <article class="mentor-card">
-              <img src="assets/mentor-zhanghui.png" alt="张辉" />
-              <div>
-                <h4 data-i18n="team.mentorZhangName">张辉</h4>
-                <p class="mentor-role" data-i18n="team.mentorZhangRole">思必驰研发总监</p>
-                <p data-i18n="team.mentorZhangBio">清华大学本科，中科院声学所硕士。在思必驰长期负责语音合成、语音识别等语音交互技术研发，成果广泛落地于智能座舱、智能家居、智慧城市和智能客服场景。</p>
-              </div>
-            </article>
-            <article class="mentor-card">
-              <img src="assets/mentor-lufeng.png" alt="陆峰" />
-              <div>
-                <h4 data-i18n="team.mentorLuName">陆峰</h4>
-                <p class="mentor-role" data-i18n="team.mentorLuRole">思必驰研发总监</p>
-                <p data-i18n="team.mentorLuBio">复旦大学软件工程硕士，Apache Nutch 项目 PMC。长期从事大数据、人工智能、超算平台、企业数字化转型及平台工程化领域工作。</p>
-              </div>
-            </article>
-            <article class="mentor-card">
-              <img src="assets/mentor-linyongkai.png" alt="林永楷" />
-              <div>
-                <h4 data-i18n="team.mentorLinName">林永楷</h4>
-                <p class="mentor-role" data-i18n="team.mentorLinRole">思必驰研发专家</p>
-                <p data-i18n="team.mentorLinBio">英国南安普顿大学人工智能硕士，高级工程师。负责分布式智能体系统设计与研发及智能体创新研究，参与主导 AIOS、DUI 等对话系统前沿技术研发。</p>
-              </div>
-            </article>
-            <article class="mentor-card">
-              <img src="assets/mentor-jiangsheng.png" alt="蒋胜" />
-              <div>
-                <h4 data-i18n="team.mentorJiangName">蒋胜</h4>
-                <p class="mentor-role" data-i18n="team.mentorJiangRole">思必驰高级研发工程师</p>
-                <p data-i18n="team.mentorJiangBio">现任物模型架构升级团队负责人。本科毕业于山东大学，硕士毕业于慕尼黑工业大学，长期从事通信工程、模式识别、图像识别、自然语言处理和智能体系统研究。</p>
-              </div>
-            </article>
-            <article class="mentor-card">
-              <img src="assets/mentor-liutao.png" alt="刘涛" />
-              <div>
-                <h4 data-i18n="team.mentorLiuName">刘涛</h4>
-                <p class="mentor-role" data-i18n="team.mentorLiuRole">思必驰高级研发工程师</p>
-                <p data-i18n="team.mentorLiuBio">上海交通大学博士，会议软件算法负责人。主要从事多模态语音理解、说话人日志、数字人音视频生成、智能会议纪要以及大模型智能体协同等方向研发。</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="approach section" id="approach">
-        <div class="approach-intro">
-          <div class="section-index reveal">04 / <span data-i18n="approach.index">链条</span></div>
-          <div>
-            <p class="section-kicker reveal" data-i18n="approach.kicker">一条完整创新链</p>
-            <h2 class="reveal" data-i18n="approach.title">突破 · 转化 · 育人</h2>
-            <p class="reveal" data-i18n="approach.body">
-              以产业真实挑战凝练科研问题，以科研突破形成可落地系统，并让每个环节都成为培养创新型 AI 人才的实践场。
-            </p>
-          </div>
-        </div>
-
-        <div class="process" aria-label="Research approach">
-          <div class="process-line" aria-hidden="true"><span></span></div>
-          <article class="process-step reveal">
-            <div class="step-marker">D</div>
-            <p>01</p>
-            <h3 data-i18n="approach.step1Title">科研突破</h3>
-            <span data-i18n="approach.step1Body">聚焦具身听觉、多模态认知与分布式智能等前沿核心技术。</span>
-          </article>
-          <article class="process-step reveal">
-            <div class="step-marker">T</div>
-            <p>02</p>
-            <h3 data-i18n="approach.step2Title">产业转化</h3>
-            <span data-i18n="approach.step2Body">连接产业前沿需求，在真实场景中验证关键技术并推动落地。</span>
-          </article>
-          <article class="process-step reveal">
-            <div class="step-marker">C</div>
-            <p>03</p>
-            <h3 data-i18n="approach.step3Title">人才培养</h3>
-            <span data-i18n="approach.step3Body">通过产学研用深度融合，培养面向 AI 时代的创新型人才。</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="partners join section" id="partners">
-        <div class="section-heading">
-          <div class="section-index reveal">05 / <span data-i18n="partners.index">加入</span></div>
-          <div>
-            <p class="section-kicker reveal" data-i18n="partners.kicker">加入我们</p>
-          </div>
-        </div>
-
-        <div class="join-card reveal">
-          <div>
-            <span class="join-label" data-i18n="partners.label">联培计划</span>
-            <h3 data-i18n="partners.name">与我们一起探索听觉及语言智能。</h3>
-            <p data-i18n="partners.body">欢迎对音频、语音、语言、多模态智能和智能体系统感兴趣的同学加入联培计划，在真实科研问题与产业场景中共同成长。</p>
-          </div>
-          <a class="join-button" href="joint-training.html">
-            <span data-i18n="partners.cta">了解联培计划</span>
-            <i aria-hidden="true">→</i>
-          </a>
-        </div>
-      </section>
-    </main>
+      
+<section class="news section" id="news" aria-labelledby="news-title">
+  <div class="home-news-heading"><h2 data-i18n="news.homeTitle" id="news-title">动态</h2><a class="news-all" href="news.html" data-i18n="news.all">查看全部动态 →</a></div>
+<div class="news-list">
+    <article class="news-item">
+      <div class="news-meta"><time datetime="2026-10-09">2026.10.09</time><span data-i18n="news.talkCategory" class="news-category">学术报告</span></div>
+      <div class="news-content"><p data-i18n="news.talkBody">西交利物浦大学李圣辰老师到访中心，并作题为《生成式音乐模型的版权管理技术》的学术报告。</p><div class="news-links"><a href="https://future.suda.edu.cn/e9/c2/c30838a715202/page.htm" target="_blank" rel="noopener noreferrer"><span data-i18n="news.reportDetails">报告详情</span> <span aria-hidden="true">↗</span></a></div></div>
+    </article>
+    <article class="news-item">
+<div class="news-meta"><time datetime="2026-09-06">2026.09.06</time><span data-i18n="news.joinCategory" class="news-category">成员加入</span></div>
+<div class="news-content"><p data-i18n="news.studentsWelcome">欢迎2026级研究生及本科生同学加入团队！</p></div>
+</article>
+<article class="news-item">
+      <div class="news-meta"><time datetime="2026-09-05">2026.09.05</time><span data-i18n="news.paperCategory" class="news-category">论文发表</span></div>
+      <div class="news-content">
+      <p class="news-summary" data-i18n="news.paperTitle">团队两篇论文获 NCMMSC 2026 接收。</p>
+      <ol class="news-paper-titles" lang="en"><li>ATF-Conditioned Neural Ambisonic Matrix Encoding for Arbitrary Microphone Arrays with Variable Microphone Count</li><li>No-Reference Evaluation of Simulation-Based Noisy Speech Restoration: An Empirical Study of Metric-Human Correlations</li></ol>
+      </div>
+    </article>
+    <article class="news-item">
+      <div class="news-meta"><time datetime="2026-09-01">2026.09.01</time><span data-i18n="news.awardCategory" class="news-category">竞赛获奖</span></div>
+      <div class="news-content">
+      <p data-i18n="news.awardBody" >恭喜实验室本科生刘俊哲（2024级）、邵泽亿（2023级）荣获2026年第二届 CCF 先进音频技术竞赛 Task 1 二等奖。</p>
+<div class="news-links">
+        <a href="https://mp.weixin.qq.com/s/qMTx48YOmyNHf2JC5YQfGw" target="_blank" rel="noopener noreferrer"><span data-i18n="news.wechatOne">公众号推送一</span> <span aria-hidden="true">↗</span></a>
+        <a href="https://mp.weixin.qq.com/s/5FmagnbyhXnst5R9V67gig" target="_blank" rel="noopener noreferrer"><span data-i18n="news.wechatTwo">公众号推送二</span> <span aria-hidden="true">↗</span></a>
+      </div></div>
+    </article>
+    <article class="news-item">
+      <div class="news-meta"><time datetime="2026-08-20">2026.08.20</time><span data-i18n="news.joinCategory" class="news-category">成员加入</span></div>
+      <div class="news-content"><p data-i18n="news.joinBody">欢迎胡诗超、徐春阳两位老师加入团队！</p></div>
+    </article>
+    <article class="news-item">
+      <div class="news-meta"><time datetime="2026-07-29">2026.07.29</time><span data-i18n="news.visitCategory" class="news-category">学术活动</span></div>
+      <div class="news-content"><p data-i18n="news.visitBody">CCF 语音对话与听觉专委“走进高校”系列活动——走进苏州大学成功举办。</p>
+      <div class="news-links"><a href="https://mp.weixin.qq.com/s/vNNk7PK9uCTp7lOvDI13Lw" target="_blank" rel="noopener noreferrer"><span data-i18n="news.wechatPost">公众号推送</span> <span aria-hidden="true">↗</span></a></div></div>
+    </article>
+    <article class="news-item">
+<div class="news-meta"><time datetime="2026-06-19">2026.06.19</time><span data-i18n="news.talkCategory" class="news-category">学术报告</span></div>
+<div class="news-content"><p data-i18n="news.wangTalkBody">香港中文大学（深圳）王泽昊老师到访中心，并作题为《声学中的高效计算及其在当代专业音频与演艺科技中的应用》的学术报告。</p><div class="news-links"><a href="https://future.suda.edu.cn/ba/35/c30838a703029/page.htm" target="_blank" rel="noopener noreferrer"><span data-i18n="news.reportDetails">报告详情</span> <span aria-hidden="true">↗</span></a></div></div>
+</article>
+<article class="news-item">
+<div class="news-meta"><time datetime="2026-04-25">2026.04.25</time><span data-i18n="news.talkCategory" class="news-category">学术报告</span></div>
+<div class="news-content"><p data-i18n="news.shiTalkBody">美国南加州大学（USC）史璇博士到访中心，并作题为《Speech Science-Informed Representation Learning for Large Speech Language Models》的学术报告。</p><div class="news-links"><a href="https://future.suda.edu.cn/96/24/c30838a693796/page.htm" target="_blank" rel="noopener noreferrer"><span data-i18n="news.reportDetails">报告详情</span> <span aria-hidden="true">↗</span></a></div></div>
+</article>
+<article class="news-item">
+      <div class="news-meta"><time datetime="2026-04-15">2026.04.15</time><span data-i18n="news.foundedCategory" class="news-category">中心动态</span></div>
+      <div class="news-content"><p><span data-i18n="news.foundedPrefix">苏州大学听觉及语言智能研究中心（</span><span lang="en">Center of Auditory and Language Intelligence, CaLi</span><span data-i18n="news.foundedSuffix">）成立！</span></p></div>
+    </article>
+  </div>
+</section>
+</main>
 
     <footer class="site-footer">
-      <a class="brand footer-brand" href="#top" aria-label="Back to top">
+      <a class="brand footer-brand" href="index.html" aria-label="CaLi home">
         <img class="brand-logo" src="assets/cali-center-logo-20260702.png" alt="CaLi logo" />
         <span><strong>CaLi</strong><small data-i18n="brand.affiliation">听觉及语言智能研究中心</small></span>
       </a>
       <div class="footer-contact">
         <p data-i18n="footer.copy">苏州大学听觉及语言智能研究中心</p>
         <a href="mailto:zhu.mengyao@suda.edu.cn">zhu.mengyao@suda.edu.cn</a>
+        <div class="footer-social"><a class="footer-github" href="https://github.com/CaLi-Suda" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
       </div>
       <p>© <span id="year"></span> CaLi</p>
     </footer>
