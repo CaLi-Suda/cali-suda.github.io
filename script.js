@@ -136,14 +136,14 @@ Object.assign(translations.en, {
 Object.assign(translations.en,{
   "members.doctoral": "Doctoral students",
   "members.doctoral.0": "Yujie Xiong",
-  "members.year2026": "2026 cohort",
+  "members.year2026": "Since 2026",
   "members.masters": "Master’s students",
   "members.masters.0": "Zhiheng Jin",
   "members.masters.1": "Yaokun Huang",
   "members.masters.2": "Yixing Huang",
   "members.undergraduate": "Undergraduates",
   "members.undergraduate.0": "Junzhe Liu",
-  "members.year2024": "2024 cohort",
+  "members.year2024": "Since 2024",
   "members.undergraduate.1": "Haowen Hua",
   "members.undergraduate.2": "Sen Lin"
 });
@@ -219,7 +219,7 @@ Object.assign(translations.en, {
 Object.assign(translations.en, {"news.foundedPrefix":"The ", "news.foundedSuffix":" at Soochow University was established."});
 Object.assign(translations.en, {"nav.papers":"Papers", "papers.title":"Papers", "papers.accepted":"Accepted"});
 Object.assign(translations.en, {
-  "members.year2025": "2025 cohort",
+  "members.year2025": "Since 2025",
   "members.doctoral.0": "Yujie Xiong",
   "members.masters.0": "Zhiheng Jin",
   "members.masters.1": "Yaokun Huang",
@@ -234,10 +234,14 @@ Object.assign(translations.en, {
   "members.undergraduate.6": "Manman Li"
 });
 
-Object.assign(translations.en, {"members.year2027": "2027 cohort"});
-Object.assign(translations.en, {"members.undergraduate.7": "Zeyi Shao", "members.year2023": "2023 cohort"});
+Object.assign(translations.en, {"members.year2027": "Since 2027"});
+Object.assign(translations.en, {"members.undergraduate.7": "Zeyi Shao", "members.year2023": "Since 2023"});
 Object.assign(translations.en, {"news.reportDetails":"Report details","news.wangTalkBody":"Zehao Wang from The Chinese University of Hong Kong, Shenzhen visited the center and gave a talk on efficient computation in acoustics and its applications in contemporary professional audio and performing arts technology.","news.shiTalkBody":"Dr. Xuan Shi from the University of Southern California (USC) visited the center and delivered a talk titled “Speech Science-Informed Representation Learning for Large Speech Language Models”."});
 Object.assign(translations.en, {"news.studentsWelcome":"Welcome to the graduate and undergraduate students of the 2026 cohort joining our team!"});
+Object.assign(translations.en, {"members.undergraduate.8": "Yinbo Hu"});
+
+Object.assign(translations.en, {"members.undergraduate.9": "Yichen Wang"});
+
 const originalText = new Map();
 document.querySelectorAll("[data-i18n]").forEach((node) => {
   originalText.set(node.dataset.i18n, node.textContent.trim());

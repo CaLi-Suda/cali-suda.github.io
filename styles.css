@@ -2638,8 +2638,8 @@ html[lang="en"] .home-page .hero h1 em,
 .members-page .team-bio { font-family: var(--sans); color: #000; font-size: 1rem; line-height: 1.8; }
 .members-page .team-links { font-size: .9rem; margin-top: .6rem !important; }
 .members-page .student-group { margin-top: 2.5rem; padding-top: 0; border-top: 0; }
-.members-page .student-grid { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1rem; }
-.members-page .student-card { display: flex; flex-direction: column; align-items: center; text-align: center; gap: .8rem; padding: 1.3rem 1rem; background: #fff; border-radius: .65rem; }
+.members-page .student-grid { grid-template-columns: repeat(4,minmax(0,1fr)); gap: .8rem; }
+.members-page .student-card { display: flex; flex-direction: column; align-items: center; text-align: center; gap: .6rem; padding: 1rem .75rem; background: #fff; border-radius: .65rem; }
 .members-page .student-monogram { flex: auto; width: 5rem; height: 5rem; border-radius: .5rem; background: var(--paper); font-size: 1.8rem; }
 .members-page .student-card h4 { color: var(--suda); font-family: var(--sans); font-size: 1.15rem; margin-bottom: .25rem; }
 .members-page .student-year { margin: 0; color: #000; font: .95rem/1.5 var(--sans); }
@@ -2656,11 +2656,12 @@ html[lang="en"] .home-page .hero h1 em,
  .members-page .team-bio { font-size: 1rem; }
 }
 
-/* Shared temporary student portrait, replace with individual photos later. */
+/* Compact portraits preserve the complete photo within a uniform frame. */
 .members-page .student-avatar {
   display: block;
-  width: 7rem;
-  height: 7rem;
+  width: 8rem;
+  height: 10rem;
+  max-width: 100%;
   object-fit: contain;
   background: #fff;
   border-radius: .5rem;
@@ -2672,3 +2673,52 @@ html[lang="en"] .home-page .hero h1 em,
 
 /* Align the innovation-chain introduction with the page content. */
 .approach .join-approach-intro { display: block; }
+
+/* English hero motto: continuous text with natural wrapping. */
+html[lang="en"] .home-page .hero h1 {
+  max-width: none;
+  white-space: normal;
+}
+html[lang="en"] .home-page .hero h1 span,
+html[lang="en"] .home-page .hero h1 em {
+  display: inline;
+}
+html[lang="en"] .home-page .hero h1 em {
+  margin-left: .25em;
+}
+
+/* English center name uses the available hero column, not the old 44rem cap. */
+html[lang="en"] .home-page .hero .hero-center-name {
+  max-width: none;
+  letter-spacing: .025em;
+  font-size: clamp(1rem, 1.15vw, 1.2rem);
+}
+/* Equal metadata columns keep every news divider and body aligned. */
+@media (min-width: 641px) {
+  html[lang="en"] .news .news-item {
+    grid-template-columns: 15rem minmax(0, 1fr);
+  }
+  html[lang="en"] .news .news-meta {
+    display: grid;
+    grid-template-columns: 6rem minmax(0, 1fr);
+    align-content: start;
+    gap: .75rem;
+  }
+  html[lang="en"] .news .news-meta .news-category {
+    white-space: normal;
+  }
+}
+
+/* Let the English research motto use the full heading column. */
+html[lang="en"] .home-page .research .section-heading h2 {
+  max-width: none;
+}
+
+@media (min-width: 601px) and (max-width: 1100px) {
+  .members-page .student-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}
+
+/* Match faculty portrait dimensions on narrow screens too. */
+@media (max-width: 600px) {
+  .members-page .student-avatar { width: 6rem; height: 7.5rem; }
+}
