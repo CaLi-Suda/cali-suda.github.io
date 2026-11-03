@@ -2722,3 +2722,9 @@ html[lang="en"] .home-page .research .section-heading h2 {
 @media (max-width: 600px) {
   .members-page .student-avatar { width: 6rem; height: 7.5rem; }
 }
+
+/* Fill the portrait frame for Manman Li’s square source image. */
+.members-page .student-avatar[src="assets/students/li-manman.jpg"] {
+  object-fit: cover;
+  object-position: center;
+}
