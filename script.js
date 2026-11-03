@@ -380,6 +380,31 @@ function drawSoundField(time = 0) {
   context.lineCap = "round";
   context.lineJoin = "round";
 
+  // Small screens use proportional, sparse curves instead of desktop contours.
+  if (window.matchMedia("(max-width: 760px)").matches) {
+    for (let ring = 0; ring < 4; ring++) {
+      const radius = size * (0.235 + ring * 0.065 + Math.sin(t * 0.45 + ring * 0.6) * 0.003);
+      context.beginPath();
+      context.arc(width / 2, height / 2, radius, 0, Math.PI * 2);
+      context.lineWidth = 0.8;
+      context.strokeStyle = "rgba(6, 42, 95, 0.13)";
+      context.stroke();
+    }
+    context.beginPath();
+    for (let step = 0; step <= 100; step++) {
+      const p = step / 100;
+      const x = width * (0.24 + p * 0.52);
+      const y = height * 0.705 + Math.sin(p * Math.PI * 12 - t * 1.4) * Math.sin(p * Math.PI) ** 2 * size * 0.015;
+      if (step === 0) context.moveTo(x, y);
+      else context.lineTo(x, y);
+    }
+    context.lineWidth = 1.3;
+    context.strokeStyle = "rgba(6, 42, 95, 0.3)";
+    context.stroke();
+    if (!prefersReducedMotion.matches) frame = requestAnimationFrame(drawSoundField);
+    return;
+  }
+
   const drawRibbon = (offset, alpha) => {
     context.beginPath();
     context.moveTo(width * 0.18, height * (0.53 + offset));
