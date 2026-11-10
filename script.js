@@ -242,6 +242,33 @@ Object.assign(translations.en, {"members.undergraduate.8": "Yinbo Hu"});
 
 Object.assign(translations.en, {"members.undergraduate.9": "Yichen Wang"});
 
+Object.assign(translations.en, {
+  "news.eventCategory": "Academic event",
+  "event.title": "CaLi co-organizes a special session on spatial hearing and human–robot interaction at NCMMSC 2026",
+  "event.summary": "NCMMSC 2026 was held in Hengqin, Zhuhai, on November 5–8, 2026. Mengyao Zhu of Soochow University joined fellow experts to organize Special Session 2, “Spatial Hearing and Human–Robot Interaction for Embodied Intelligence.” The session attracted enthusiastic submissions and lively discussions during the invited talks.",
+  "event.body": "The 21st National Conference on Man-Machine Speech Communication (NCMMSC 2026) was held in Hengqin, Zhuhai, on November 5–8, 2026. Mengyao Zhu of Soochow University joined fellow experts to organize Special Session 2, “Spatial Hearing and Human–Robot Interaction for Embodied Intelligence,” focusing on auditory perception, spatial understanding, and natural human–machine interaction in real-world settings. The session received an enthusiastic response from researchers and ranked among the leading special sessions by submission count. Its invited talks attracted many interested faculty members and students, with lively exchanges providing a forum to share research findings and ideas.",
+  "event.date": "November 5–8, 2026 · Hengqin, Zhuhai",
+  "event.details": "Event details and presentation slides",
+  "event.back": "Back to news",
+  "event.scene": "Audience at the special session",
+  "event.sceneHeading": "The special session attracted many interested faculty members and students.",
+  "event.people": "Organizers and invited speakers",
+  "event.organizers": "Special session organizers",
+  "event.speakers": "Invited speakers and announced talk topics",
+  "event.reports": "Presentation slides",
+  "event.reportNote": "Titles below follow the presentation covers; announced topics are shown in the speaker poster above.",
+  "event.wang": "Wenwu Wang · University of Surrey",
+  "event.chen": "Kai Chen · Depth Intelligence / Beijing Zhongguancun Academy",
+  "event.zhao": "Zhou Zhao · Zhejiang University",
+  "event.chenTitle": "Multimodal Foundations of Physical Intelligence",
+  "event.zhaoTitle": "Research on Spatial Audio Synthesis",
+  "event.read": "Read PDF",
+  "event.download": "Download PDF",
+  "event.distribution": "Conference submission distribution: the session on spatial hearing and human–robot interaction for embodied intelligence ranked among the leading special sessions by submission count.",
+  "event.chart": "Submission and acceptance statistics presented at the conference",
+  "event.openImage": "Open full-size image"
+});
+
 const originalText = new Map();
 document.querySelectorAll("[data-i18n]").forEach((node) => {
   originalText.set(node.dataset.i18n, node.textContent.trim());
@@ -289,7 +316,7 @@ const languageToggle = document.querySelector(".language-toggle");
 
 function setLanguage(language) {
   currentLanguage = language;
-  document.querySelectorAll('.site-nav a, .brand[href="index.html"], .news-all').forEach(link => {
+  document.querySelectorAll('.site-nav a, .brand[href="index.html"], .news-all, [data-keep-lang]').forEach(link => {
     const href = link.getAttribute('href').split('?')[0];
     link.setAttribute('href', href + '?lang=' + language);
   });

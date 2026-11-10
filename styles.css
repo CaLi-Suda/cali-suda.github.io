@@ -2728,3 +2728,23 @@ html[lang="en"] .home-page .research .section-heading h2 {
   object-fit: cover;
   object-position: center;
 }
+
+/* Conference news article: readable text, responsive figures and file links. */
+.event-detail { max-width: 1120px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; color: #000; font-family: var(--sans); }
+.event-back { display: inline-block; color: var(--suda); margin-bottom: 1.5rem; }
+.event-date, .event-note, .event-detail figcaption { color: var(--muted); font-size: .9rem; }
+.event-header h1 { color: var(--suda); font: 700 clamp(1.5rem, 3vw, 2.3rem)/1.45 var(--sans); margin: .6rem 0 1rem; overflow-wrap: break-word; }
+.event-lead { font-size: 1.05rem; line-height: 1.85; margin-bottom: 1.5rem; }
+.event-detail section { margin: 2rem 0; }
+.event-detail h2 { color: var(--suda); font: 700 1.4rem/1.5 var(--sans); margin-bottom: .8rem; }
+.event-detail figure { margin: 0 0 1rem; }
+.event-detail figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: .4rem; }
+.event-detail figcaption { margin-top: .5rem; line-height: 1.5; }
+.event-gallery { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; }
+.event-report { padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.event-speaker { color: var(--muted); margin: 0 0 .3rem; }
+.event-report h3 { font: 600 1.1rem/1.55 var(--sans); color: var(--suda); margin: 0 0 .6rem; }
+.event-links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; font-size: .95rem; }
+.event-links a { color: var(--suda); text-decoration: underline; text-underline-offset: .2em; }
+.event-links > span { color: var(--muted); }
+@media(max-width: 700px) { .event-gallery { grid-template-columns: 1fr; } .event-detail { padding: 1.5rem 1.1rem 2.5rem; } }
