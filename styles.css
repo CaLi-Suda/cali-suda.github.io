@@ -1229,6 +1229,22 @@ html[lang="en"] .statement-grid p {
   letter-spacing: 0.13em;
 }
 
+.join-contact {
+  margin-top: 28px;
+  padding: clamp(20px, 3vw, 36px);
+  border: 1px solid rgba(6, 42, 95, 0.18);
+  background: rgba(255, 255, 255, 0.65);
+}
+.join-contact h2 { margin: 0 0 18px; font-size: 24px; color: #062a5f; }
+.join-contact dl { margin: 0; color: #111; }
+.join-contact dl > div { display: grid; grid-template-columns: 6em minmax(0, 1fr); gap: 12px; margin-top: 10px; line-height: 1.7; }
+.join-contact dt { font-weight: 600; }
+.join-contact dd { margin: 0; overflow-wrap: anywhere; }
+.join-contact a { color: #062a5f; text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 480px) {
+  .join-contact dl > div { grid-template-columns: 1fr; gap: 2px; margin-top: 14px; }
+}
+
 .join-card {
   position: relative;
   display: grid;
@@ -1274,6 +1290,13 @@ html[lang="en"] .statement-grid p {
   font-weight: 500;
   letter-spacing: -0.055em;
   line-height: 1.06;
+}
+
+#partners .join-card h3 {
+  max-width: 100%;
+  font-size: clamp(1.5rem, 2.2vw, 2.25rem);
+  line-height: 1.35;
+  letter-spacing: -0.02em;
 }
 
 .join-card p {

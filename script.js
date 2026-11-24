@@ -1,5 +1,13 @@
 const translations = {
   en: {
+    "join.contact.title": "Contact Us",
+    "join.contact.personLabel": "Contact",
+    "join.contact.person": "Prof. Mengyao Zhu",
+    "join.contact.officeLabel": "Office",
+    "join.contact.office": "Room 617, Future Innovation Center, Future Campus, Soochow University",
+    "join.contact.emailLabel": "Email",
+    "news.chenAnTalk": "An Chen from Shanghai Jiao Tong University visited the center and gave a talk titled “From Speech Understanding and Generation Towards Speech Interaction”.",
+    "news.xuXiangyuanTalk": "Xiangyuan Xu from Nanjing University visited the center and gave a talk titled “MEMS Acoustic Vector Sensors and Their Applications”.",
     "brand.affiliation": "Center of Auditory and Language Intelligence",
     "nav.about": "About",
     "nav.research": "Research",
@@ -240,7 +248,7 @@ Object.assign(translations.en, {"news.reportDetails":"Report details","news.wang
 Object.assign(translations.en, {"news.studentsWelcome":"Welcome to the graduate and undergraduate students of the 2026 cohort joining our team!"});
 Object.assign(translations.en, {"members.undergraduate.8": "Yinbo Hu"});
 
-Object.assign(translations.en, {"members.undergraduate.9": "Yichen Wang"});
+Object.assign(translations.en, {"members.undergraduate.liuZirui": "Zirui Liu", "members.undergraduate.huJiaqi": "Jiaqi Hu"});
 
 Object.assign(translations.en, {
   "news.eventCategory": "Academic event",
