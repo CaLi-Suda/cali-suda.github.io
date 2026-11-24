@@ -6,7 +6,7 @@ const translations = {
     "join.contact.officeLabel": "Office",
     "join.contact.office": "Room 617, Future Innovation Center, Future Campus, Soochow University",
     "join.contact.emailLabel": "Email",
-    "news.chenAnTalk": "An Chen from Shanghai Jiao Tong University visited the center and gave a talk titled “From Speech Understanding and Generation Towards Speech Interaction”.",
+    "news.chenAnTalk": "Xie Chen from Shanghai Jiao Tong University visited the center and gave a talk titled “From Speech Understanding and Generation Towards Speech Interaction”.",
     "news.xuXiangyuanTalk": "Xiangyuan Xu from Nanjing University visited the center and gave a talk titled “MEMS Acoustic Vector Sensors and Their Applications”.",
     "brand.affiliation": "Center of Auditory and Language Intelligence",
     "nav.about": "About",
